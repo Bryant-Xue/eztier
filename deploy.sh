@@ -10,6 +10,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 BLUE='\033[0;34m'
 D='\033[0m'
+username=$(whoami)
 
 # 尝试引入tte
 export PATH="$HOME/.local/bin:$PATH"
@@ -62,7 +63,7 @@ script_in_background() {
     show_loading $! "$message"         # 显示加载动画
 }
 
-echo -e "Now Checking ${BLUE}TerminalTextEffects${D}"
+# echo -e "Now Checking ${BLUE}TerminalTextEffects${D}"
 
 # # 检查 tte 是否安装
 # if command -v tte &>/dev/null; then
@@ -114,8 +115,8 @@ clear
 # 显示欢迎信息并执行终端文本效果
 echo -e "Greetings, ${BLUE}$username${D}" 
 sleep 1
-echo "We are now deploying Easytier to ${BLUE}$hostname${D}"
-echo "The current time is $current_time"
+echo -e "We are now deploying Easytier to ${BLUE}$hostname${D}"
+echo -e "The current time is $current_time"
 
 install_easytier(){
     script_in_background '
