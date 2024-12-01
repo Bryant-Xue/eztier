@@ -6,4 +6,4 @@ Run the following command in a Bash environment. The script **ONLY** supports De
 
 ***Use at your own risk!***
 ```
-bash <(curl -Ls https://github.com/Bryant-Xue/eztier/blob/main/deploy.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Bryant-Xue/eztier/main/deploy.sh)
